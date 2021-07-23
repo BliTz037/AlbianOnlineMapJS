@@ -11,21 +11,18 @@ function getBuildingInfo(arrayID)
     let requestArr = new Array;
 
     return new Promise((resolve, reject) => {
-            for (const element of arrayID)
-                requestArr.push(axios.get(element));
-            axios.all(requestArr)
-            .then(
-                axios.spread((...response) => {
-                    //console.log(response);
-                    let dataArr = new Array;
-                    for (const element of response)
-                        dataArr.push(element.data);
-                    resolve(dataArr);
-                })
-            )
-            .catch(error => {
-                reject(error)
-            })
+        for (const element of arrayID)
+            requestArr.push(axios.get(element));
+        axios.all(requestArr)
+        .then(axios.spread((...response) => {
+            let dataArr = new Array;
+            for (const element of response)
+                dataArr.push(element.data);
+                resolve(dataArr);
+            }))
+        .catch(error => {
+            reject(error)
+        })
     });
 }
 
