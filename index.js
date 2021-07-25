@@ -8,7 +8,61 @@ let config = {
     path: "/map"
 }
 
-function getBuildingInfo(arrayID)
+function getListParcel(selector, root)
+{
+    let data = {
+        length: 0,
+        lengthAvailable: 0,
+        available: []
+    };
+    let tab = root.querySelectorAll(selector)
+    let tabData = tabletojson.convert(tab.toString())[0];
+
+    if (typeof(tabData) == 'undefined')
+        tabData = [];
+    data["length"] = tabData.length;
+    for (const element of tabData) {
+        if (element['location'] != "INDISPONIBLE" ||
+            element['achat'] != "INDISPONIBLE")
+            data["available"].push(element);
+    }
+    data["lengthAvailable"] = data["available"].length;
+    return data;
+}
+
+function getBuildingInfo(buffer)
+{
+    const root = HTMLParser.parse(buffer);
+    let building = { name: root.querySelector('p.caption-view').childNodes[0]._rawText };
+    
+    if (root.querySelector('#caption-shops') == null &&
+        root.querySelector('#caption-apartments') == null) {
+            let data = {
+                length: 1,
+                lengthAvailable: 0,
+                available: []
+            };
+            const buttonArr = root.querySelectorAll("button");
+            if (buttonArr[0]._attrs.hasOwnProperty("onclick") ||
+                buttonArr[1]._attrs.hasOwnProperty("onclick")) {
+                data.available.push({
+                    nom: building.name,
+                    'étage': '0e',
+                    location: root.querySelector("span.value").childNodes[0]._rawText,
+                    achat: 'INDISPONIBLE'
+                });
+                data.lengthAvailable++;
+            }
+            building["shops"] = data;
+    }
+    else {
+        building["apartements"] = getListParcel("#caption-apartments", root);
+        building["shops"] = getListParcel("#caption-shops", root);
+    }
+    return building;
+}
+
+function getAllBuildingPage(arrayID)
 {
     let requestArr = new Array;
 
@@ -35,6 +89,7 @@ axios.get(`${config.url}${config.path}`)
         const root = HTMLParser.parse(res.data);
         const arrayLocation = root.querySelectorAll('a.marker')
         const arrayID = new Array;
+        let result = new Array;
         for (const element of arrayLocation) {
             if (element._rawAttrs.hasOwnProperty("building-id"))
                 arrayID.push(`${config.url}${config.path}/caption/building/${element._rawAttrs["building-id"]}`);
@@ -44,19 +99,21 @@ axios.get(`${config.url}${config.path}`)
         console.log(`${arrayID.length} parcelles présentes sur le serveur !`);
         console.log("Recherche des parcelles disponible...");
         console.log(arrayID);
-        getBuildingInfo(arrayID)
-        .then(result => {
-            console.log(result);
-            console.log(result.length);
+        getAllBuildingPage(arrayID)
+        .then(res => {
+            for (const element of res)
+                result.push(getBuildingInfo(element));
+            console.log(JSON.stringify(result, null, 2));
+            let json = JSON.stringify(result, null, 2);
+            fs.writeFile('result.json', json, 'utf8', function (err) {
+                if (err)
+                    console.error(err);
+            });
         })
         .catch(error => {
-            console.error(error);
+            console.error(error.code);
         });
     })
     .catch(function(error) {
         console.error(error)
-        // if (error.response.status === 404)
-        //     console.log("404 Page not found");
-        // else
-        //     console.log(error.response.status);
     });
