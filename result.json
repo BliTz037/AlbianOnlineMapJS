@@ -1,0 +1,298 @@
+[
+  {
+    "name": "1 Avenue Adrien Lewis",
+    "apartements": {
+      "length": 14,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "1 Rue Ludwig Eisner",
+    "apartements": {
+      "length": 9,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "2 Boulevard de l&#39;Altitudo",
+    "apartements": {
+      "length": 0,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 0,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "4 Rue Strathoff",
+    "apartements": {
+      "length": 20,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 0,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "3 Boulevard de l&#39;Altitudo",
+    "apartements": {
+      "length": 4,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "3 Rue Strathoff",
+    "apartements": {
+      "length": 16,
+      "lengthAvailable": 1,
+      "available": [
+        {
+          "nom": "Appartement n°3",
+          "étage": "0e",
+          "location": "40 alts",
+          "achat": "INDISPONIBLE"
+        }
+      ]
+    },
+    "shops": {
+      "length": 0,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "2 Rue Strathoff",
+    "apartements": {
+      "length": 4,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "2 Rue Ludwig Eisner",
+    "apartements": {
+      "length": 0,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 5,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "3 Rue Ludwig Eisner",
+    "apartements": {
+      "length": 7,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 2,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "1 Rue Strathoff",
+    "apartements": {
+      "length": 0,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 14,
+      "lengthAvailable": 6,
+      "available": [
+        {
+          "nom": "Magasin n°1",
+          "étage": "1e",
+          "location": "90 alts",
+          "achat": "INDISPONIBLE"
+        },
+        {
+          "nom": "Magasin n°3",
+          "étage": "1e",
+          "location": "90 alts",
+          "achat": "INDISPONIBLE"
+        },
+        {
+          "nom": "Magasin n°4",
+          "étage": "1e",
+          "location": "90 alts",
+          "achat": "INDISPONIBLE"
+        },
+        {
+          "nom": "Magasin n°5",
+          "étage": "1e",
+          "location": "90 alts",
+          "achat": "INDISPONIBLE"
+        },
+        {
+          "nom": "Magasin n°6",
+          "étage": "1e",
+          "location": "90 alts",
+          "achat": "INDISPONIBLE"
+        },
+        {
+          "nom": "Magasin n°3",
+          "étage": "2e",
+          "location": "90 alts",
+          "achat": "INDISPONIBLE"
+        }
+      ]
+    }
+  },
+  {
+    "name": "2 Avenue Adrien Lewis",
+    "apartements": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    },
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "1 Avenue Ursula Schneider",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "5 Place de l&#39;Altigorod",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "3 Place de l&#39;Altigorod",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "1 Place de l&#39;Altigorod",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 1,
+      "available": [
+        {
+          "nom": "1 Place de l&#39;Altigorod",
+          "étage": "0e",
+          "location": "145",
+          "achat": "INDISPONIBLE"
+        }
+      ]
+    }
+  },
+  {
+    "name": "6 Boulevard de l&#39;Altitudo",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "5 Boulevard de l&#39;Altitudo",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "4 Boulevard de l&#39;Altitudo",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "mbl__rue_Strat_6_m",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "1 Chemin du Travail",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 0,
+      "available": []
+    }
+  },
+  {
+    "name": "2 Place de l&#39;Altigorod",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 1,
+      "available": [
+        {
+          "nom": "2 Place de l&#39;Altigorod",
+          "étage": "0e",
+          "location": "145",
+          "achat": "INDISPONIBLE"
+        }
+      ]
+    }
+  },
+  {
+    "name": "4 Place de l&#39;Altigorod",
+    "shops": {
+      "length": 1,
+      "lengthAvailable": 1,
+      "available": [
+        {
+          "nom": "4 Place de l&#39;Altigorod",
+          "étage": "0e",
+          "location": "145",
+          "achat": "INDISPONIBLE"
+        }
+      ]
+    }
+  }
+]

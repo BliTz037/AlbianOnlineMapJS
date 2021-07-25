@@ -1,5 +1,7 @@
 const axios = require('axios');
 const HTMLParser = require('node-html-parser');
+const tabletojson = require('tabletojson').Tabletojson;
+const fs = require('fs');
 
 let config = {
     url: "http://albianonline.fr",

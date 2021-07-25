@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "node-html-parser": "^4.1.0"
+    "node-html-parser": "^4.1.0",
+    "tabletojson": "^2.0.7"
   }
 }
