@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "99bca5c6-add9-4738-bcf6-1a034ef25efa",
+		"name": "Albian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Map",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://albianonline.fr/map",
+					"protocol": "http",
+					"host": [
+						"albianonline",
+						"fr"
+					],
+					"path": [
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "markerbuilding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://albianonline.fr/map/caption/building/24",
+					"protocol": "http",
+					"host": [
+						"albianonline",
+						"fr"
+					],
+					"path": [
+						"map",
+						"caption",
+						"building",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "markerMonobuilding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://albianonline.fr/map/caption/monobuilding/20",
+					"protocol": "http",
+					"host": [
+						"albianonline",
+						"fr"
+					],
+					"path": [
+						"map",
+						"caption",
+						"monobuilding",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
